@@ -101,9 +101,33 @@ Results to be added later
 ```
 
 
-**Ubuntu 22.04 on Intel i5-8500T**
+**Python 3.11.8 on Ubuntu 22.04 with Intel i5-8500T**
 
 ```
-Results to be added later
+Single-threaded choice: 29.56 sec
+yes: 49997575, no: 50002425
+Single-threaded randrange: 31.43 sec
+yes: 49996034, no: 50003966
+Single-threaded random: 7.87 sec
+yes: 50010426, no: 49989574
+
+Multi-threaded choice: 42.30 sec
+yes: 49991732, no: 50008268
+Multi-threaded randrange: 44.60 sec
+yes: 50000429, no: 49999571
+Multi-threaded random: 9.05 sec
+yes: 50008182, no: 49991818
+
+CPU count: 6
+Multi-processing choice: 5.83 sec
+yes: 50009441, no: 49990555
+Multi-processing randrange: 6.17 sec
+yes: 50006118, no: 49993878
+Multi-processing random: 1.48 sec
+yes: 50009849, no: 49990147
+
+async
+Async random async: 7.94 sec
+yes: 49992179, no: 50007821
 ```
 </details>
