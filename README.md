@@ -1,6 +1,6 @@
 
 
-## Random Selection Script (random_select.py)
+## Random Selection Speed Execution Script (CPU-bound tasks)
 
 ### Overview
 
@@ -59,9 +59,10 @@ The script will automatically execute the comparison and display the results for
 * `random` library for generating random values
 * `asyncio` library for asynchronous programming (used for the asynchronous execution)
 
+
 <details>
 
-<summary> ### Execution Results</summary>
+<summary>Execution Results (click tio expand)</summary>
 
 **Mac with M1**
 
