@@ -64,7 +64,7 @@ The script will automatically execute the comparison and display the results for
 
 <summary>Execution Results (click tio expand)</summary>
 
-**Mac with M1**
+**Python 3.11.7 on Mac with M1**
 
 ```
 Single-threaded choice: 23.19 sec
@@ -183,4 +183,35 @@ async
 Async random async: 7.94 sec
 yes: 49992179, no: 50007821
 ```
+
+**Python 3.11.7 on Windows 11 with Intel i5-1035G7 (Cores: 4 / Logical CPU: 6)** - laptop
+
+```
+Single-threaded choice: 32.51 sec
+yes: 49996559, no: 50003441
+Single-threaded randrange: 34.51 sec
+yes: 50009436, no: 49990564
+Single-threaded random: 8.52 sec
+yes: 49998908, no: 50001092
+
+Multi-threaded choice: 34.70 sec
+yes: 50004930, no: 49995070
+Multi-threaded randrange: 37.42 sec
+yes: 49992683, no: 50007317
+Multi-threaded random: 10.67 sec
+yes: 49995058, no: 50004942
+
+CPU count: 8
+Multi-processing choice: 9.78 sec
+yes: 50002242, no: 49997758
+Multi-processing randrange: 13.86 sec
+yes: 50004650, no: 49995350
+Multi-processing random: 4.18 sec
+yes: 50014722, no: 49985278
+
+async
+Async random async: 8.99 sec
+yes: 50004017, no: 49995983
+```
+
 </details>
