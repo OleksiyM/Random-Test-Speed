@@ -59,7 +59,9 @@ The script will automatically execute the comparison and display the results for
 * `random` library for generating random values
 * `asyncio` library for asynchronous programming (used for the asynchronous execution)
 
-### Execution Results
+<details>
+
+<summary> ### Execution Results</summary>
 
 **Mac with M1**
 
@@ -103,3 +105,4 @@ Results to be added later
 ```
 Results to be added later
 ```
+</details>
