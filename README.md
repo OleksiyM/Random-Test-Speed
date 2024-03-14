@@ -94,38 +94,38 @@ Async random async: 5.51 sec
 yes: 49995906, no: 50004094
 ```
 
-**Windows 11 on Intel i5-8500T**
+**Python 3.11.7 on Windows 11 with Intel i5-8500T (Cores/Logical CPU: 6)** - same hardware as below
 
 ```
-Single-threaded choice: 41.88 sec
-yes: 50000746, no: 49999254
-Single-threaded randrange: 44.21 sec
-yes: 50003825, no: 49996175
-Single-threaded random: 11.41 sec
-yes: 50004322, no: 49995678
+Single-threaded choice: 40.82 sec
+yes: 50009297, no: 49990703
+Single-threaded randrange: 42.31 sec
+yes: 50000790, no: 49999210
+Single-threaded random: 10.78 sec
+yes: 49992072, no: 50007928
 
-Multi-threaded choice: 40.88 sec
-yes: 49999690, no: 50000310
-Multi-threaded randrange: 43.36 sec
-yes: 49995894, no: 50004106
-Multi-threaded random: 11.46 sec
-yes: 50003137, no: 49996863
+Multi-threaded choice: 40.46 sec
+yes: 49994303, no: 50005697
+Multi-threaded randrange: 41.79 sec
+yes: 50005119, no: 49994881
+Multi-threaded random: 10.99 sec
+yes: 50003664, no: 49996336
 
 CPU count: 6
-Multi-processing choice: 9.69 sec
-yes: 50008809, no: 49991187
-Multi-processing randrange: 10.34 sec
-yes: 49989394, no: 50010602
-Multi-processing random: 2.85 sec
-yes: 49995572, no: 50004424
+Multi-processing choice: 7.56 sec
+yes: 49998711, no: 50001285
+Multi-processing randrange: 8.14 sec
+yes: 49990076, no: 50009920
+Multi-processing random: 2.39 sec
+yes: 50003991, no: 49996005
 
 async
-Async random async: 11.40 sec
-yes: 49996877, no: 50003123
+Async random async: 11.13 sec
+yes: 49999728, no: 50000272
 ```
 
 
-**Python 3.11.8 on Ubuntu 22.04 with Intel i5-8500T**
+**Python 3.11.8 on Ubuntu 22.04.4 with Intel i5-8500T (Cores/Logical CPU: 6)** - same hardware as above 
 
 ```
 Single-threaded choice: 29.56 sec
