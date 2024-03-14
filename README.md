@@ -97,7 +97,31 @@ yes: 49995906, no: 50004094
 **Windows 11 on Intel i5-8500T**
 
 ```
-Results to be added later
+Single-threaded choice: 41.88 sec
+yes: 50000746, no: 49999254
+Single-threaded randrange: 44.21 sec
+yes: 50003825, no: 49996175
+Single-threaded random: 11.41 sec
+yes: 50004322, no: 49995678
+
+Multi-threaded choice: 40.88 sec
+yes: 49999690, no: 50000310
+Multi-threaded randrange: 43.36 sec
+yes: 49995894, no: 50004106
+Multi-threaded random: 11.46 sec
+yes: 50003137, no: 49996863
+
+CPU count: 6
+Multi-processing choice: 9.69 sec
+yes: 50008809, no: 49991187
+Multi-processing randrange: 10.34 sec
+yes: 49989394, no: 50010602
+Multi-processing random: 2.85 sec
+yes: 49995572, no: 50004424
+
+async
+Async random async: 11.40 sec
+yes: 49996877, no: 50003123
 ```
 
 
