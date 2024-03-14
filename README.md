@@ -214,4 +214,64 @@ Async random async: 8.99 sec
 yes: 50004017, no: 49995983
 ```
 
+**Python 3.11.2 on LMDE 6 (Debian 12) with Intel Celeron N3060 (2 cores)** - netbook
+
+```
+Single-threaded choice: 101.13 sec
+yes: 50003630, no: 49996370
+Single-threaded randrange: 127.73 sec
+yes: 50001691, no: 49998309
+Single-threaded random: 27.51 sec
+yes: 50003751, no: 49996249
+
+Multi-threaded choice: 123.28 sec
+yes: 49999168, no: 50000832
+Multi-threaded randrange: 158.08 sec
+yes: 49997208, no: 50002792
+Multi-threaded random: 34.27 sec
+yes: 49998846, no: 50001154
+
+CPU count: 2
+Multi-processing choice: 65.80 sec
+yes: 49998558, no: 50001442
+Multi-processing randrange: 65.05 sec
+yes: 50002651, no: 49997349
+Multi-processing random: 16.91 sec
+yes: 50000459, no: 49999541
+
+async
+Async random async: 26.28 sec
+yes: 50000319, no: 49999681
+```
+
+**Python 3.11.8 on Google IDX VM with RAM: 8Gb, Cores: 2**
+
+```
+Single-threaded choice: 47.72 sec
+yes: 50001776, no: 49998224
+Single-threaded randrange: 49.09 sec
+yes: 49999663, no: 50000337
+Single-threaded random: 12.60 sec
+yes: 49997630, no: 50002370
+
+Multi-threaded choice: 51.94 sec
+yes: 49997591, no: 50002409
+Multi-threaded randrange: 56.82 sec
+yes: 50004175, no: 49995825
+Multi-threaded random: 12.54 sec
+yes: 50006503, no: 49993497
+
+CPU count: 2
+Multi-processing choice: 46.28 sec
+yes: 49992610, no: 50007390
+Multi-processing randrange: 48.74 sec
+yes: 50003956, no: 49996044
+Multi-processing random: 12.98 sec
+yes: 49987894, no: 50012106
+
+async
+Async random async: 12.02 sec
+yes: 49998566, no: 50001434
+```
+
 </details>
