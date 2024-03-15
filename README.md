@@ -60,9 +60,24 @@ The script will automatically execute the comparison and display the results for
 * `asyncio` library for asynchronous programming (used for the asynchronous execution)
 
 
+## Results
+
+This table summarizes the execution times for the "multi-processing random" selection method across various environments:
+
+| Environment | Multi-processing (random)          |
+|---|------------------------------------|
+| Python 3.11.7 on Mac with M1 | 1.27 sec |
+| Python 3.11.7 on Windows 11 with Intel i5-8500T (Cores/Logical CPU: 6) | 2.39 sec                           |
+| Python 3.12.1 on Windows 11 with Intel i5-8500T (Cores/Logical CPU: 6) | 2.21 sec                           |
+| Python 3.11.8 on Ubuntu 22.04.4 with Intel i5-8500T (Cores/Logical CPU: 6) | 1.48 sec|
+| Python 3.11.7 on Windows 11 with Intel i5-1035G7 (Cores: 4 / Logical CPU: 6) | 4.18 sec |
+| Python 3.11.2 on LMDE 6 (Debian 12) with Intel Celeron N3060 (2 cores) | 16.91 sec |
+| Python 3.11.8 on Google IDX VM with RAM: 8Gb, Cores: 2 | 12.98 sec |
+
+
 <details>
 
-<summary>Execution Results (click tio expand)</summary>
+<summary>Detailed execution Results (click to expand)</summary>
 
 **Python 3.11.7 on Mac with M1**
 
@@ -275,3 +290,14 @@ yes: 49998566, no: 50001434
 ```
 
 </details>
+
+### Observations:
+
+* The "multi-processing random" selection method achieves significantly faster execution times compared to single-threaded or multi-threaded approaches (data not shown, but likely in the original table). This is because it utilizes multiple CPU cores for parallel processing, leading to faster completion of the random selection tasks.
+* There are variations in performance across different environments. Mac with M1 shows the fastest execution time (1.27 seconds), followed by Ubuntu and various Windows machines with Intel i5 processors (ranging from 1.48 to 4.18 seconds). The slowest execution is observed on the netbook with a Celeron N3060 CPU (16.91 seconds) and the Google IDX VM with limited cores (12.98 seconds).
+* These variations can be attributed to several factors:
+    * **CPU architecture:** Modern CPUs like M1 are optimized for parallel processing, leading to faster execution.
+    * **Number of cores:** More cores allow for more parallel tasks, improving speed.
+    * **Overall system performance:** Factors like RAM and storage speed can also influence execution times.
+
+**Overall, the results demonstrate the benefits of multi-processing for random selection tasks. The choice of hardware and system configuration can significantly impact performance.**
