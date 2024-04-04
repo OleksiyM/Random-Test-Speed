@@ -64,15 +64,15 @@ The script will automatically execute the comparison and display the results for
 
 This table summarizes the execution times for the "multi-processing random" selection method across various environments:
 
-| Environment | Multi-processing (random)          |
-|---|------------------------------------|
-| Python 3.11.7 on Mac with M1 | 1.27 sec |
-| Python 3.11.7 on Windows 11 with Intel i5-8500T (Cores/Logical CPU: 6) | 2.39 sec                           |
-| Python 3.12.1 on Windows 11 with Intel i5-8500T (Cores/Logical CPU: 6) | 2.21 sec                           |
-| Python 3.11.8 on Ubuntu 22.04.4 with Intel i5-8500T (Cores/Logical CPU: 6) | 1.48 sec|
-| Python 3.11.7 on Windows 11 with Intel i5-1035G7 (Cores: 4 / Logical CPU: 6) | 4.18 sec |
-| Python 3.11.2 on LMDE 6 (Debian 12) with Intel Celeron N3060 (2 cores) | 16.91 sec |
-| Python 3.11.8 on Google IDX VM with RAM: 8Gb, Cores: 2 | 12.98 sec |
+| Environment                                                                  | Multi-processing (random) |
+|------------------------------------------------------------------------------|---------------------------|
+| Python 3.11.7 on Mac with M1                                                 | 1.27 sec                  |
+| Python 3.11.7 on Windows 11 with Intel i5-8500T (Cores/Logical CPU: 6)       | 2.39 sec                  |
+| Python 3.12.1 on Windows 11 with Intel i5-8500T (Cores/Logical CPU: 6)       | 2.21 sec                  |
+| Python 3.11.8 on Ubuntu 22.04.4 with Intel i5-8500T (Cores/Logical CPU: 6)   | 1.48 sec                  |
+| Python 3.11.7 on Windows 11 with Intel i5-1035G7 (Cores: 4 / Logical CPU: 6) | 4.18 sec                  |
+| Python 3.11.2 on LMDE 6 (Debian 12) with Intel Celeron N3060 (2 cores)       | 16.91 sec                 |
+| Python 3.11.8 on Google IDX VM with RAM: 8Gb, Cores: 2                       | 12.98 sec                 |
 
 
 <details>
